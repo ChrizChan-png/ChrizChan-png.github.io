@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Christian Pedregosa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.content p, .content ul {
+text-align: justify;
+}
+.cv-container {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.sidebar  {
+    width: 30%;
+    background: #002b5b;
+    color: white;
+    padding: 20px;
+    text-align: justify;
+}
+
+.profile-image {
+    width: 120px;                                              
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+.sidebar h2 {
+    margin-top: 10px;
+}
+.content {
+    width: 70%;
+    padding: 20px;
+    text-align: left;
+}
+h2 {
+    color: #002b5b;
+    border-bottom: 2px solid rgb(3, 3, 44);
+    padding-bottom: 5px;
+}
+.section {
+    margin-bottom: 20px;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+ul li {
+    padding: 5px 0;
+}
+.footer {
+    text-align: center;
+    padding: 10px;
+    background: #002b5b;
+    color: white;
+}
+.sidebar .section {
+    text-align: left;
+    margin-top: 20px;
+}
+.bold-dot::before {
+    content: "●"; 
+    font-weight: bold;
+    font-size: 18px; 
+    margin-right: 5px;
+}
+.timeline {
+    position: relative;
+    padding-left: 20px;
+}
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 5px; 
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: maroon; 
+}
+.timeline li {
+    position: relative;
+    list-style-type: none;
+    margin-left: 20px;
+}
+.timeline li::before {
+    content: "•";
+    position: absolute;
+    left: -20px;
+    font-size: 20px;
+}
+.highlight {
+    color: blue;
+}
+
+
+.cv-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.sidebar {
+    width: 30%;
+    background: rgb(2, 2, 76);
+    padding: 20px;
+    border-left: 2px solid #ccc;
+}
+.content {
+    width: 70%;
+    padding: 20px;
+}
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    text-align: center;
+}
+.skill-container {
+    width: 80%;
+    margin: 0 auto;
+}
+.skill {
+    text-align: left;
+    margin: 10px 0;
+}
+.progress-bar-container {
+    width: 100%;
+    background-color: gray;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 10px;
+    margin-top: 5px;
+}
+.progress-bar {
+    height: 100%;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    font-weight: bold;
+    background-color: maroon;
+    border-radius: 5px;
+}
+.nc-button {
+    margin-left: 15px;
+    padding: 5px 10px;
+    background-color: #002b5b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.nc-button:hover {
+    background-color: #004080;
+}
+
+.hidden-image {
+    display: none;
+    text-align: center;
+    margin-top: 10px;
+}
+.hidden-image img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+</style>
+<script>
+    function toggleCertificate() {
+        var cert = document.getElementById("certificate-container");
+        if (cert.style.display === "none" || cert.style.display === "") {
+            cert.style.display = "block";
+        } else {
+            cert.style.display = "none";
+        }
+    }
+</script>
+
+<body>
+    <div class="cv-container">
+        <div class="content">
+            <div class="section">
+                <h1><span style="color: rgb(5, 5, 68);">Christian</span> Pedregosa</h1>
+                <h3><strong><h3>Technical Support</h3></strong></h3>
+<hr style="width: 190px; height: 10px; background-color: rgb(43, 43, 111); border: none; margin-left: 0;">
+<h2>
+    <img src="c:\Users\ACER\Downloads\pngimg.com - cv_PNG18.png" alt="Profile" width="30" height="30">&nbsp;Profile
+    <button class="nc-button" onclick="toggleCertificate()">View My NC II Certificate</button>
+</h2>    
+                <p>NC-II certified Technical Support Specialist with expertise
+                    in hardware and software troubleshooting, network
+                    maintenance, and system diagnostics. Skilled in providing
+                    efficient technical solutions, ensuring system reliability,
+                    and delivering exceptional IT support in fast-paced
+                    environments.</p>
+                    <div id="certificate-container" class="hidden-image">
+                        <img src="c:\Users\ACER\Downloads\f6263174-c74d-4cbc-b069-a6194a06596f.jpg" alt="NC II Certificate">
+                    </div>
+            </div>
+            <div class="section">
+                <h2>
+                    <img src="c:\Users\ACER\Downloads\OIP.jpg" alt="Work Experience" width="40" height="30">Work Experience
+                </h2>                
+                <ul class="timeline">
+                    <strong>Department of Labor and Employment (DOLE)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2024-2025)</strong>
+                    <p>TUPAD Job Program Employee</p>
+                    <ul>
+                        <li>Sweeping in Barangay streets every morning</li>
+                        <li>Removing tall grass using a shovel</li>
+                        <li>Segregating waste into proper bins</li>
+                    </ul>
+                    <hr>
+                    <strong>Public Employment Service Office (PESO)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2021-2022)</strong>
+                    <p>Summer Job Employee</p>
+                    <ul>
+                        <li>Processing payroll papers for employees</li>
+                        <li>Encoding reports and request letters</li>
+                        <li>Arranging necessary files/documents</li>
+                        <li>Guiding and assisting clients</li>
+                    </ul>
+                </li>
+                <hr>
+                <strong>Public Employment Service Office (PESO)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2021-2022)</strong>
+                    <p>Work Immersion Student</p>
+                    <ul>
+                        <li>Assisted in assembling, troubleshooting, and maintaining computer hardware and peripherals.</li>
+                        <li>Installed and configured operating systems, software applications, and basic network settings.</li>
+                        <li>Observed and supported IT professionals in handling technical support and system maintenance tasks.</li>
+                    </ul>
+                </li>
+                <hr>
+                <strong>Public Employment Service Office (PESO)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2020-2021)</strong>
+                    <p>Summer Job Employee</p>
+                    <ul>
+                        <li>Processing payroll papers for employees</li>
+                        <li>Encoding reports and request letters</li>
+                        <li>Conducting a survey for unemployed persons</li>
+                    </ul>
+                </li> 
+            </div>
+            <div class="section">
+                <h2>
+                    <img src="c:\Users\ACER\Downloads\1713999-200.png" alt="Language" width="30" height="30">Language
+                </h2>   
+                 <ul>
+                    <li><img src="c:\Users\ACER\Downloads\R (1).png" alt="Philippine Flag Icon" width="15"> Filipino (Fluent)</li>
+                    <li><img src="c:\Users\ACER\Downloads\USA-Flag-Download-PNG-Image.png" alt="USA Flag Icon" width="15"> English (Native)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="sidebar">
+            <center><img src="c:\Users\ACER\Downloads\28cc33cf-fdd9-41a4-aabb-590379c57865.jpg" alt="Profile Picture" class="profile-image"></center>
+            <center><h3>Contact</h3></center>
+            <hr>
+            <p>
+                <img src="https://static.vecteezy.com/system/resources/previews/027/379/065/non_2x/trendy-telephone-icon-flat-style-receive-phone-call-design-element-for-web-and-mobile-application-telephone-symbol-free-png.png" alt="Contact Icon" width="15">
+                0953-058-1709
+            </p>
+            <p>
+                <img src="c:\Users\ACER\Downloads\gmail-email-logo-png-16 (1).png" alt="Email Icon" width="15">
+                christianpedregosa4@gmail.com
+            </p>
+            <p>
+                <img src="https://logodix.com/logo/37864.png" alt="Location Icon" width="15">
+                7207 N, Upper Loboc P-4, Oroquieta City
+            </p>
+            <center><h3>Education</h3></center>
+            <hr>
+            <p><strong>University of Science & Technology of Southern Philippines</strong> (2022 - Present)</p>
+            <center><p>• Information Technology</p></center>
+            <p><strong>Misamis Occidental NHS</strong> (2017 - 2022)</p>
+            <center><p>• Computer Systems Servicing (CSS)</p></center>
+            <center><h3>Soft Skills</h3></center>
+            <hr>
+            <ul>
+                <center><li>• Communication</li></center>
+                <div class="skill-container">
+                    <div class="skill">
+                       
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                <center><li>• Problem Solving</li></center>
+                <div class="progress-bar-container">
+                <div class="progress-bar" style="width: 80%;"></div>
+            </div>
+        </div>
+                <center><li>• Empathy</li></center>
+                <div class="skill-container">
+                    <div class="skill">
+                       
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                <center><li>• Customer Service</li></center>
+                <div class="skill">
+                       
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                </div>
+            </ul>
+            <center><h3>Technical Skills</h3></center>
+            <hr>
+            <ul>
+                <center><li>• Encoding</li></center>
+                <div class="skill-container">
+                    <div class="skill">
+                       
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                <center><li>• Data Management</li></center>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" style="width: 80%;"></div>
+                </div>
+            </div>
+                <center><li>• Software Proficiency<br>(Word, Excel, PowerPoint)</li></center>
+                <div class="skill-container">
+                    <div class="skill">
+                       
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 80%;"></div>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Reference available upon request</p>
+    </div>
+
+
+    <div class="cv-container">
+        <div class="sidebar">
+          <center><img src="c:\Users\ACER\Downloads\253d47b7-cde0-4a99-83ad-3a05e4ee76d3 (2).jpg" alt="Profile Picture" class="profile-image"></center>
+          <center><h3>Contact</h3></center>
+            <hr>
+             
+            <p>
+                <img src="https://static.vecteezy.com/system/resources/previews/027/379/065/non_2x/trendy-telephone-icon-flat-style-receive-phone-call-design-element-for-web-and-mobile-application-telephone-symbol-free-png.png" alt="Contact Icon" width="15">
+                09568165326
+            </p>
+            <p>
+                <img src="c:\Users\ACER\Downloads\gmail-email-logo-png-16 (1).png" alt="Email Icon" width="15">
+                jhakedalis893@gmail.com
+            </p>
+            
+            <p>
+                <img src="https://logodix.com/logo/37864.png" alt="Location Icon" width="15">
+                7207 N, Proper Langcangan P-7, Oroquieta City
+            </p>
+            
+            <center><h3>Education</h3></center>
+            <hr>
+            <p><strong>University of Science & Technology of Southern Philippines</strong> (2022 - Present)</p>
+            <center><p>• Information Technology</p></center>
+            <p><strong>Misamis Occidental NHS</strong> (2017 - 2022)</p>
+            <center><p>• General Academic Strand (GAS)</p></center>
+            <center><h3>Soft Skills</h3></center>
+            <hr>
+            <ul>
+                <center><li>• Communication Skills</li></center>
+                <div class="skill-container">
+                    <div class="skill">
+                       
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                <center> <li>• Leadership Skills</li></center>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" style="width: 80%;"></div>
+                </div>
+            </div>
+                <center><li>• Adaptability</li></center>
+                <div class="skill-container">
+                    <div class="skill">
+                       
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                <center><li>• Initiative and Self-Motivation</li></center>
+                <div class="skill">
+                       
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                </div>
+            </ul>
+            <center><h3>Technical Skills</h3></center>
+            <hr>
+            <ul>
+                <center><li>• Entrepreneurial Skills </li></center>
+                <div class="skill-container">
+                    <div class="skill">
+                       
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                <center><li>• Research and Analytical Skills</li></center>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" style="width: 80%;"></div>
+                </div>
+            </div>
+                <center><li>• Problem-Solving Skills</li></center>
+                <div class="skill-container">
+                    <div class="skill">
+                       
+                        <div class="progress-bar-container">
+                            <div class="progress-bar" style="width: 70%;"></div>
+                    </div>
+                </div>
+            </ul>            
+        </div>
+        <div class="content">
+            <div class="section">
+                <h1><span style="color: rgb(5, 5, 68);">Jhake Brylle</span> Dalis</h1>
+            <h3><strong><h3>Technical Support</h3></strong></h3>
+<hr style="width: 190px; height: 10px; background-color: rgb(43, 43, 111); border: none; margin-left: 0;">
+<h2>
+    <img src="c:\Users\ACER\Downloads\pngimg.com - cv_PNG18.png" alt="Profile" width="30" height="30">&nbsp;Profile
+</h2> 
+                <p>Skilled in both humanities and business-related fields, with experience in research, leadership, and teamwork. Passionate about continuous learning and exploring diverse career opportunities including business management, education, and social sciences.Equipped with excellent communication, critical thinking, and problem-solving skills, adaptable to different fields such as marketing, entrepreneurship, and customer service. Passionate about continuous learning and professional growth, with a proactive approach to teamwork and leadership.</p>
+            </div>
+            <div class="section">
+                <h2>
+                    <img src="c:\Users\ACER\Downloads\OIP.jpg" alt="Work Experience" width="40" height="30">Work Experience
+                </h2>    
+                <ul class="timeline">
+                    <strong>Oroquieta City Water District (OCWD)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2021-2022)</strong>
+                        <p>Work Immersion Student</p>
+                        <ul>
+                            <li>Assisted in processing customer inquiries and service requests regarding water billing and connections.</li>
+                            <li>Conducted basic data entry and record-keeping tasks to update customer information.</li>
+                            <li>Observed and supported field personnel in routine water meter inspections and maintenance activities.</li>
+                        </ul>
+                </ul>
+            </div>
+            <div class="section">
+                <h2>
+                    <img src="c:\Users\ACER\Downloads\1713999-200.png" alt="Language" width="30" height="30">Language
+                </h2>  
+                <ul>
+                    <li><img src="c:\Users\ACER\Downloads\R (1).png" alt="Philippine Flag Icon" width="15"> Filipino (Fluent)</li>
+                    <li><img src="c:\Users\ACER\Downloads\USA-Flag-Download-PNG-Image.png" alt="USA Flag Icon" width="15"> English (Native)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Reference available upon request</p>
+    </div>  
+</body>
+</html>
