@@ -19,6 +19,7 @@
             text-align: center;
             color: white;
             background: url('background.jpg') no-repeat center center/cover;
+            transition: background 0.5s ease-in-out;
         }
         .container {
             width: 100%;
@@ -81,14 +82,30 @@
             background: black;
             color: white;
         }
-        #imageInput {
+        .upload-section {
             position: absolute;
             bottom: 20px;
             left: 50%;
             transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
             background: rgba(255, 255, 255, 0.8);
             padding: 10px;
             border-radius: 10px;
+        }
+        .upload-section input, .upload-section button {
+            cursor: pointer;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        .upload-section button {
+            background: #444;
+            color: white;
+            transition: 0.3s;
+        }
+        .upload-section button:hover {
+            background: red;
         }
     </style>
 </head>
@@ -107,10 +124,19 @@
             <a href="#" class="btn">Get Started</a>
         </div>
     </div>
-    <input type="file" id="imageInput" accept="image/*">
+    
+    <!-- Upload Section -->
+    <div class="upload-section">
+        <input type="file" id="imageInput" accept="image/*">
+        <button id="resetBg">Reset</button>
+    </div>
     
     <script>
-        document.getElementById('imageInput').addEventListener('change', function(event) {
+        const imageInput = document.getElementById('imageInput');
+        const resetBtn = document.getElementById('resetBg');
+        
+        // Handle background image upload
+        imageInput.addEventListener('change', function(event) {
             const file = event.target.files[0];
             if (file) {
                 const reader = new FileReader();
@@ -119,6 +145,11 @@
                 };
                 reader.readAsDataURL(file);
             }
+        });
+
+        // Reset background to default
+        resetBtn.addEventListener('click', function() {
+            document.body.style.backgroundImage = "url('background.jpg')";
         });
     </script>
 </body>
